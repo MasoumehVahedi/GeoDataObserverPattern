@@ -22,6 +22,7 @@ class GeoData:
 # This is our observable
 class GeoTask(Observable):
     def __init__(self):
+        super(GeoTask, self).__init__()
         self.geoData = GeoData()
 
     # This is interface
