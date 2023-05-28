@@ -34,5 +34,6 @@ class GeoTask(Observable):
         self.geoData.Point = np.random.randint(low=1, high=100)
         self.geoData.Line = np.random.randint(low=1, high=100)
         self.geoData.Area = np.random.randint(low=1, high=100)
+        self.notify()
 
 

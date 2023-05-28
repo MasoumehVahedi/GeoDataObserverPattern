@@ -6,22 +6,17 @@ class Observable:
         self.status = None
 
     # add observer
-    def add(self, observer):
+    def attach(self, observer):
         self._observers.append(observer)
 
     # remove observer
-    def remove(self, observer):
+    def detach(self, observer):
         self._observers.remove(observer)
 
     # notify observers
     def notify(self):
         for observer in self._observers:
             observer.update(self.status)
-
-    def get_status(self, status):
-        print("Setting GeoData to: ", status)
-        self.status = status
-        self.notify()
 
 
 # Observer interface
