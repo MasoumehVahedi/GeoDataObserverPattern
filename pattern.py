@@ -16,11 +16,11 @@ class Observable:
     # notify observers
     def notify(self):
         for observer in self._observers:
-            observer.update(self.status)
+            observer.updateData(self.status)
 
 
 # Observer interface
 class Observer:
-    def update(self, status):
+    def updateData(self, status):
         pass
 

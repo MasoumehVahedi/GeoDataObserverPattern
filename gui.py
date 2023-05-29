@@ -15,7 +15,7 @@ class GUI(Observer):
         print("Area: {}".format(self.geoDataObj.getGeoData().Area))
 
     # When we call update, the observer notice that something has changed to POLL data from observable
-    def update(self, status):
+    def updateData(self, status):
         self.show()
 
 

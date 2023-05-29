@@ -18,7 +18,7 @@ class GeoData:
             self.area = area
 
 
-# Generate and get the geo_data types.
+# Generate and get the geo_data types
 # This is our observable
 class GeoTask(Observable):
     def __init__(self):
